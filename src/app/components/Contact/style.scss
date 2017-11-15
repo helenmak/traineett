@@ -1,0 +1,96 @@
+.contactsSectionWrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: start;
+	align-items: center;
+	color: #000000;
+	font-family: "Open Sans";
+	height: 476px;
+	padding-bottom: 24px;
+	box-sizing: border-box;
+	
+		& h2 {
+			font-size: 30px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			line-height: 1em;
+			margin: 10px 0 64px 0;
+		} 
+		
+		.contactsWrapper {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+			height: 100%;
+		
+			.contacts {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-between;
+				width: 137px;
+				height: 184px;
+				color: #222222;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 14px;
+				letter-spacing: 0.75px;
+				padding-right: 140px;
+			
+				& div span{
+					color: #888888;
+					line-height: 2.5em;
+				}
+			}
+			
+			& form {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-between;
+				align-items: center;
+				height: 274px;
+				
+				& input, & textarea {
+					padding: 10px 9px 10px; 
+					box-sizing: border-box;
+					font-family: "Open Sans";
+					font-size: 15px;
+					line-height: 1em;
+				}
+				
+				& input[name="name"] {
+					width: 437px;
+					height: 40px;
+					border: 1px solid #898989;
+				}
+				
+				& input[name="email"] {
+					width: 437px;
+					height: 40px;
+					border: 1px solid #898989;
+					margin-top: -0.5em;
+				}
+				
+				& textarea {
+					width: 437px;
+					height: 89px;
+					border: 1px solid #898989;
+				}
+				
+				& button {
+					width: 166px;
+					height: 30px;
+					background-color: #333333;
+					color: #ffffff;
+					border: none;
+					font-family: "Open Sans";
+					font-size: 15px;
+					font-weight: 400;
+					line-height: 18px;
+					text-transform: uppercase;
+					letter-spacing: 1.13px;
+					
+				}
+			}
+		}
+}

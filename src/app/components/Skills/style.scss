@@ -1,0 +1,76 @@
+.skillsSectionWrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	color: #000000;
+	font-family: "Open Sans";
+	height: 404px;
+	padding-bottom: 24px;
+	box-sizing: border-box;
+
+		& h2 {
+			font-size: 30px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 2.25px;
+			line-height: 1em;
+			margin: 0 0 38px 0;
+		}
+
+	& .wrapper {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+
+		& .skillsName {
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-between;
+			margin-right: 45px;
+			text-align: right;
+
+			& span {
+				color: #333333;
+				font-family: "Open Sans";
+				font-size: 30px;
+				font-weight: 400;
+				letter-spacing: 1.5px;
+			}
+
+		}
+
+		& .skillsScores{
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: space-around;
+			align-items: center;
+			height: 100%;
+			margin-left: 45px;
+
+			& div {
+				display: flex;
+				flex-flow: row nowrap;
+				width: 285px;
+				justify-content: space-between;
+			}
+
+				& span {
+					border-radius: 50%;
+				}
+				& .emptyRound {
+					border: 10px solid #9c9a9a;
+					}
+				& .filledRound {
+					border: 10px solid #333333;
+				}
+				
+				
+		}
+
+		
+	}
+
+
+
+}
