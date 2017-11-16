@@ -31,11 +31,11 @@ export default class Contact extends Component {
 				<div className={style.contactsSectionWrapper}>
 					<h2>CONTACT</h2>
 					<div className = {style.contactsWrapper}>
-						<div className = {style.contacts}>
+						<address>
 							<div>Phone number: <span>+38066-66-66-666</span></div>
 							<div>Email: <span>mail@gmail.com</span></div>
 							<div>Skype: <span>mySkypeAcc</span></div>
-						</div>
+						</address>
 						<form className="contactForm" onSubmit={this.handleSubmit}>
 							<input type="text" name="name" id="name" placeholder = "Name" 
 								value={this.state.name} onChange= {this.handleChange} />

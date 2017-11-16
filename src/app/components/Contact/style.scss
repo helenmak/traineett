@@ -24,7 +24,7 @@
 			justify-content: center;
 			height: 100%;
 		
-			.contacts {
+			address {
 				display: flex;
 				flex-flow: column nowrap;
 				justify-content: space-between;
@@ -36,6 +36,7 @@
 				line-height: 14px;
 				letter-spacing: 0.75px;
 				padding-right: 140px;
+				font-style: normal;
 			
 				& div span{
 					color: #888888;

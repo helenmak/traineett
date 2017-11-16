@@ -21,11 +21,13 @@ export default class App extends Component {
 		return(
 			<div className={style.app}>
 				<Home/>
-				<About/>
-				<hr/>
-				<Skills scores={scores}/>
-				<hr/>
-				<Contact/>
+				<main>
+					<About/>
+					<hr/>
+					<Skills scores={scores}/>
+					<hr/>
+					<Contact/>
+				</main>
 				<Footer/>
 			</div>
 		)
