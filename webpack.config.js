@@ -1,12 +1,17 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin'),
-    host = 'localhost', //для WDS
-    port = process.env.port; //для WDS
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 //const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const config = {
-    context: path.join(__dirname, './src'),
+const config = (env)=>{
+	 const  host = 'localhost', //для WDS
+			port = process.env.port,
+			outputDir = env ? env.output : 'dist';//для WDS
+	
+    return {
+		
+	context: path.join(__dirname, './src'),
     entry: [
         `webpack-dev-server/client?http://${host}:3000`, // TODO: заменить потом на переменную port. Почему-то не видит порт здесь.
         'webpack/hot/only-dev-server', 
@@ -28,7 +33,7 @@ const config = {
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, outputDir)
     },
 
     module: {
@@ -96,6 +101,8 @@ const config = {
             inject: true
         }),
     ]
+	
+}
 };
 
 module.exports = config;
