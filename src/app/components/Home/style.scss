@@ -11,14 +11,18 @@ header {
 	font-family: "Open Sans";
 	box-sizing: border-box;
 
-/*	@media screen and (max-width: )*/
-
 	& .headerMenu {
 		margin: 3.65% 5.78% 0;
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 		justify-content: space-between;
 		align-self: stretch;
+
+		@media screen and (max-width: 353px){
+			justify-content: center;
+			nav { order: 0; }
+			.logo { order: 1; }
+		}
 	
 		& .logo {
 			flex: 0 0 33px;
@@ -32,6 +36,12 @@ header {
 		& nav {
 			width: 27.5%;
 			min-width: 250px;
+			
+			@media screen and (max-width: 353px){
+				width: 100%;
+				margin-bottom: 20%;
+			}
+
 			
 			& ul {
 				display: flex;
@@ -79,6 +89,7 @@ header {
 		color: #fefefe;
 		text-transform: uppercase;
 		line-height: 1em;
+		text-align: center;
 	}
 
 	& h1 {
@@ -95,5 +106,6 @@ header {
 		letter-spacing: 0.75px;
 		line-height: 1em;
 		margin: 0;
+		padding: 0 1%;
 	}
 }
