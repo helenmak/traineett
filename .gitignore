@@ -24,6 +24,9 @@ lib-cov
 node_modules
 jspm_packages
 
+# Directories
+build
+
 # Optional npm cache directory
 .npm
 

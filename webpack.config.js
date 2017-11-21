@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = (env)=>{
-	 const  host = 'localhost', //для WDS
+	 const  host = '192.168.1.9', //для WDS
 			port = process.env.port,
 			outputDir = env ? env.output : 'dist';//для WDS
 	

@@ -12,7 +12,7 @@ export default class Home extends Component {
 		
 		return(
 			<header id= "header">
-				<div className = {style.upperMenu}>
+				<div className = {style.headerMenu}>
 					<span className = {style.logo}>&lt;&#47;&gt;</span>
 					<nav>
 						<ul>

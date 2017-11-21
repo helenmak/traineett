@@ -2,21 +2,20 @@ footer {
 	flex-basis: 173px;
 	width: 100%;
 	max-width: 1280px;
-	height: 173px;
 	background-color: #333333;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 20px;
-	padding-left: 192px;
-	padding-right: 202px;
+	padding-left: 15%;
+	padding-right: 15.78%;
 	box-sizing: border-box;
 	
 	table {
 		border: none;
 		border-spacing: 7px 14px;
-		width: 206px;
+		min-width: 206px;
 		height: 65px;
 		color: #fffefe;
 		font-family: "Open Sans", sans-serif;
