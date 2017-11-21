@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = (env)=>{
-	 const  host = '192.168.1.9', //для WDS
+	 const  host = 'localhost', //для WDS
 			port = process.env.port,
 			outputDir = env ? env.output : 'dist';//для WDS
 	
@@ -87,7 +87,7 @@ const config = (env)=>{
                 use: {
                     loader: 'url-loader',
                     options: {
-                        limit: 512 * 10,
+                        limit: 1024 * 10,
                         name: 'assets/[hash:6]/[hash].[ext]'
                     }
                 }

@@ -24,7 +24,7 @@ export default class Skills extends Component {
 				<div className = {style.skillAssessment} key = {score.name + "_level"}> {rounds} </div>
 				</div>)
 			
-		})
+		});
 
 		return skills;
 	}
@@ -43,3 +43,4 @@ export default class Skills extends Component {
 	}
 
 }
+
