@@ -1,0 +1,95 @@
+header {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: start;
+	background-image: url("./images/bg.png");
+	max-width: 1280px;
+	height: 648px;
+	color: #ffffff;
+	font-family: "Open Sans";
+	box-sizing: border-box;
+
+	& .upperMenu {
+		padding: 24px 74px 0;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-self: stretch;
+	
+		& .logo {
+			flex: 0 0 33px;
+			padding-left: 53px;
+			font-family: Tahoma;
+			font-size: 26px;
+			line-height: 1em;
+			letter-spacing: 0.75px;
+		}
+
+		& nav {
+			flex: 0 0 311px;
+			
+			& ul {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-between;
+				list-style: none;
+				padding-left: 0;
+				line-height: 1.56em;
+				margin: 0;
+				font-size: 18px;
+				letter-spacing: 0.45px;
+				
+				& li a {
+					position: relative;
+					color: #ffffff;
+					text-decoration: none;
+				}
+				
+				& li a:visited {
+					outline: none;
+				}
+				
+				& li a:after {
+					position: absolute;
+					left: -28%;
+					top:100%;
+					content: "";
+					height: 2px;
+					width: 0%;
+					background-color: #ffffff;
+					transition: width 0.5s;
+				}
+				
+				& li a:hover:after,
+					a:focus:after {
+						width: 158%;
+					}
+				
+			}
+		}
+
+	}
+
+	& h1, & h2 {
+		color: #fefefe;
+		text-transform: uppercase;
+		line-height: 1em;
+	}
+
+	& h1 {
+		font-size: 60px;
+		font-weight: 700;
+		letter-spacing: 4.5px;
+		margin: 172px 0 30px 0;
+	}
+
+	& h2 {
+		font-size: 30px;
+		font-style: italic;
+		font-weight: 400;
+		letter-spacing: 0.75px;
+		line-height: 1em;
+		margin: 0;
+	}
+}

@@ -1,0 +1,32 @@
+@mixin font-face($family, $path){
+	@font-face {
+		font-family: $family;
+		src: url($path);
+	}
+}
+
+@include font-face("Open Sans", "app/fonts/openSans.ttf")
+@include font-face(Tahoma, "app/fonts/tahoma.ttf")
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	max-width: 1280px;
+	margin: 0 auto;
+	
+	main {
+		max-width: 1280px;
+	}
+
+	& hr {
+		color: #cccccc;
+		width: 100%;
+		height: 1px;
+		border-top: 1px;
+	}
+}
