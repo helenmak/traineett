@@ -32,9 +32,9 @@ export default class Contact extends Component {
 					<h2>CONTACT</h2>
 					<div className = {style.contactsWrapper}>
 						<address>
-							<div>Phone number: <span>+38066-66-66-666</span></div>
-							<div>Email: <span>mail@gmail.com</span></div>
-							<div>Skype: <span>mySkypeAcc</span></div>
+							<div>Phone number: <br/><span>+38066-66-66-666</span></div>
+							<div>Email: <br/><span>mail@gmail.com</span></div>
+							<div>Skype: <br/><span>mySkypeAcc</span></div>
 						</address>
 						<form className="contactForm" onSubmit={this.handleSubmit}>
 							<input type="text" name="name" id="name" placeholder = "Name" 
