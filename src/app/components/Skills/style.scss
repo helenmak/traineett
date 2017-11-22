@@ -31,6 +31,10 @@
 			display: flex;
 			flex-flow: row nowrap;
 
+			@media screen and (max-width: 331px){
+				justify-content: space-between;
+			}	
+
 			& .skillName {
 				color: #333333;
 				letter-spacing: 1.5px;
@@ -74,6 +78,14 @@
 				}
 				& .filledRound {
 					border: 10px solid #333333;
+				}
+
+				@media screen and (max-width: 331px){
+					padding-right: 1vw;
+
+					.emptyRound, .filledRound {
+						border-width: 8px;
+					}
 				}
 			}
 		}

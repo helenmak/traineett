@@ -7,15 +7,17 @@ footer {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 20px;
-	padding-left: 15%;
-	padding-right: 15.78%;
+	padding: 0 15.78% 0 15.56%;
 	box-sizing: border-box;
+
+	@media screen and (max-width: 915px) {
+		padding: 0 5%;
+	}
 	
 	table {
 		border: none;
 		border-spacing: 7px 14px;
-		min-width: 206px;
+		min-width: 222px;
 		height: 65px;
 		color: #fffefe;
 		font-family: "Open Sans", sans-serif;
@@ -34,6 +36,20 @@ footer {
 		font-weight: 400;
 		line-height: 0.5em;
 		letter-spacing: 0.75px;
+	}
+
+	@media screen and (max-width: 353px){
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+
+		.footerLogo { 
+			order: 0;
+			font-size: 40px; 
+		}
+		table { 
+			order: 1;
+		}
 	}
 }
 

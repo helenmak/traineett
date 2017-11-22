@@ -5,7 +5,12 @@
 	align-items: center;
 	color: #000000;
 	min-height: 448px;
+	padding: 0 2%;
 	box-sizing: border-box;
+
+	@media screen and (max-width: 859px){
+		padding: 23px 2%;
+	}
 
 	& h2 {
 		font-size: 30px;
@@ -13,13 +18,14 @@
 		text-transform: uppercase;
 		letter-spacing: 2.25px;
 		line-height: 1em;
-		margin: 0 0 28px 0;
+		margin: 0 0 20px 0;
 	}
 
 	& .aboutWrapper {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
+		align-items: center;
 		height: 100%;
 		width: 100%;
 
@@ -31,16 +37,22 @@
 			font-weight: 400;
 
 			& p {
-				width: 301px;
+				width: 305px;
+				hyphens: auto;
 				font-size: 0.73em;
 				line-height: 1.125em;
 				letter-spacing: 0.8px;
-				overflow: hidden;
 				margin: 0;
+				box-sizing: border-box;
+
+				@media screen and (max-width: 859px){
+					width: 100%;
+					padding: 0 2%;
+				}
 			}
 
 			& h3 {
-				margin: 0 0 8px 0;
+				margin: 8px 0 10px 0;
 				font-size: 22px;
 				letter-spacing: 1.1px;
 				font-style: italic;
@@ -49,7 +61,25 @@
 
 		& .aboutGoals {
 			text-align: right;
+		}
 
+		@media screen and (max-width: 859px){
+			justify-content: space-around;
+
+			.aboutGoals, .aboutDreams {
+				text-align: justify;
+				width: 100%;
+				order: 2;
+				outline: 1px solid red;
+			}
+			.aboutAvatar {
+				order: 1;
+				width: 100%;
+				text-align: center;
+			}
+			h3 {
+				text-align: center;
+			}
 		}
 
 		& .aboutAvatar {

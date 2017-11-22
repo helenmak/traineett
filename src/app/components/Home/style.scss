@@ -12,7 +12,7 @@ header {
 	box-sizing: border-box;
 
 	& .headerMenu {
-		margin: 3.65% 5.78% 0;
+		margin: 23.65px 5.78% 0;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -39,9 +39,8 @@ header {
 			
 			@media screen and (max-width: 353px){
 				width: 100%;
-				margin-bottom: 20%;
+				margin-bottom: 5vw;
 			}
-
 			
 			& ul {
 				display: flex;
@@ -75,14 +74,11 @@ header {
 					transition: width 0.5s;
 				}
 				
-				& li a:hover:after,
-					a:focus:after {
-						width: 156%;
-					}
-				
+				& li a:hover:after, a:focus:after {
+					width: 156%;
+				}	
 			}
 		}
-
 	}
 
 	& h1, & h2 {
@@ -96,7 +92,11 @@ header {
 		font-size: 60px;
 		font-weight: 700;
 		letter-spacing: 4.5px;
-		margin: 26.5% 0 4.6% 0;
+		margin: 25.86vh 0 4.48vh 0;
+
+		@media screen and (max-width: 323px){
+			font-size: 56px;
+		}
 	}
 
 	& h2 {

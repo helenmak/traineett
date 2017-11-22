@@ -48,12 +48,19 @@ const config = (env)=>{
                             localIdentName: '[path][name]-[local]'
                         }
                     },
+                    {loader: 'postcss-loader', 
+                        options: {
+                            plugins: 
+                                [require('autoprefixer')({ 
+                                    browsers: ['last 2 versions'] 
+                                })] 
+                            }
+                        },
                     {loader: 'sass-loader'}
                 ]
             },
             {
                 test: /\.jsx?$/,
-                exclude: /node_modules/, 
                 loader: 'babel-loader',
                 query: {
                     presets: [ "es2015", "react"],
